@@ -3,6 +3,8 @@ Application to rasterize multiple triangles and other primitives onto the screen
 
 Uses Windows API to create a window with a canvas, then send pixel data to that canvas.
 
+The window creation code was almost entirely copied from the Windows API docs.
+
 It utilizes the [ray casting algorithm](https://en.wikipedia.org/wiki/Point_in_polygon#Ray_casting_algorithm) to determine whether a point is inside a primitive or not, pixel by pixel.
 
 This is mathematically more correct than scanline rendering, but is also more complicated and slower.
